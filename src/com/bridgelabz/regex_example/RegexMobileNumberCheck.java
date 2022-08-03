@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 public class RegexMobileNumberCheck {
     public static void main(String[] args) {
 
-        Pattern pattern = Pattern.compile("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}$");
+        Pattern pattern = Pattern.compile("^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*_-])(?=.*[0-9]).{8,}$");
         System.out.println("Please enter password minimum 8 character");
         Scanner sc = new Scanner(System.in);
         String password = sc.nextLine();
